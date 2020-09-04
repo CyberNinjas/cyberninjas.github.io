@@ -1,39 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//static.cyberninjas.local/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//cyberninjas.com/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://static.cyberninjas.local/news/</loc>
+		<loc>https://cyberninjas.com/news/</loc>
 		<lastmod>2019-07-31T16:47:30+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://static.cyberninjas.local/promotion/25-discount-for-sarasota-area-businesses-who-book-by-may-1st/</loc>
+		<loc>https://cyberninjas.com/promotion/25-discount-for-sarasota-area-businesses-who-book-by-may-1st/</loc>
 		<lastmod>2014-03-14T17:56:45+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://static.cyberninjas.local/blog/herald-tribune-covers-cyber-ninjas-move/</loc>
+		<loc>https://cyberninjas.com/blog/herald-tribune-covers-cyber-ninjas-move/</loc>
 		<lastmod>2014-03-29T15:34:34+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://static.cyberninjas.local/press-release/cyber-ninjas-doug-logan-named-national-sans-difference-maker/</loc>
+		<loc>https://cyberninjas.com/press-release/cyber-ninjas-doug-logan-named-national-sans-difference-maker/</loc>
 		<lastmod>2017-12-30T17:10:29+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://static.cyberninjas.local/press-release/cyber-ninjas-doug-logan-to-speak-on-cyber-security-at-suncoast-technology-forum/</loc>
+		<loc>https://cyberninjas.com/press-release/cyber-ninjas-doug-logan-to-speak-on-cyber-security-at-suncoast-technology-forum/</loc>
 		<lastmod>2017-12-30T17:12:17+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://static.cyberninjas.local/blog/avoiding-car-crashes-an-information-security-overview/</loc>
+		<loc>https://cyberninjas.com/blog/avoiding-car-crashes-an-information-security-overview/</loc>
 		<lastmod>2017-12-30T17:13:32+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://static.cyberninjas.local/press-release/cyber-ninjas-to-relocate-to-sarasota/</loc>
+		<loc>https://cyberninjas.com/press-release/cyber-ninjas-to-relocate-to-sarasota/</loc>
 		<lastmod>2017-12-30T17:14:57+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://static.cyberninjas.local/blog/causes-we-support/</loc>
+		<loc>https://cyberninjas.com/blog/causes-we-support/</loc>
 		<lastmod>2018-01-05T22:27:08+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://static.cyberninjas.local/blog/cyber-security-career-resources/</loc>
+		<loc>https://cyberninjas.com/blog/cyber-security-career-resources/</loc>
 		<lastmod>2019-07-31T16:47:30+00:00</lastmod>
 	</url>
 </urlset>

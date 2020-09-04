@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//static.cyberninjas.local/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//cyberninjas.com/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://static.cyberninjas.local/category/blog/</loc>
+		<loc>https://cyberninjas.com/category/blog/</loc>
 		<lastmod>2019-07-31T16:47:30+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://static.cyberninjas.local/category/news/</loc>
+		<loc>https://cyberninjas.com/category/news/</loc>
 		<lastmod>2014-03-29T15:34:34+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://static.cyberninjas.local/category/press-release/</loc>
+		<loc>https://cyberninjas.com/category/press-release/</loc>
 		<lastmod>2017-12-30T17:14:57+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://static.cyberninjas.local/category/promotion/</loc>
+		<loc>https://cyberninjas.com/category/promotion/</loc>
 		<lastmod>2014-03-14T17:56:45+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://static.cyberninjas.local/category/risk-analysis/</loc>
+		<loc>https://cyberninjas.com/category/risk-analysis/</loc>
 		<lastmod>2017-12-30T17:13:32+00:00</lastmod>
 	</url>
 </urlset>
