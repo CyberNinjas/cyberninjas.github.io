@@ -1,0 +1,350 @@
+/* Font Stack
+------------------------------------------------------------ */
+@mixin font-stack-headings($important) {
+    $stack: 'Orbitron', sans-serif;
+    @if $important == 1 {
+        font-family: $stack !important; 
+    } @else  if $important == 0 {
+        font-family: $stack;
+    }
+    // @include font-stack-headings(1); <-- Important
+	// @include font-stack-headings(0); <-- Not Important
+}
+
+
+
+@mixin font-stack-body($important) {
+    $stack: 'Molengo', sans-serif;
+    @if $important == 1 {
+        font-family: $stack !important; 
+    } @else  if $important == 0 {
+        font-family: $stack;
+    }
+    // @include font-stack-body(1); <-- Important
+	// @include font-stack-body(0); <-- Not Important
+}
+
+
+/*
+ * Responsive Breakpoints
+ * Courtesy of Chris Coyier
+ */
+ 
+@mixin break($point) {
+  @if $point == papa-shark {
+    @media (max-width: 1100px) { @content; }
+  }
+  @if $point == mama-shark {
+    @media (max-width: 1000px) { @content; }
+  }
+  @if $point == teen-shark {
+    @media (max-width: 900px) { @content; }
+  }
+  @if $point == child-shark {
+    @media (max-width: 816px) { @content; }
+  }
+  @if $point == toddler-shark {
+    @media (max-width: 600px) { @content; }
+  }
+  @if $point == reverso-toddler-shark {
+    @media (min-width: 600px) { @content; }
+  }
+
+  @if $point == reverso-child-shark {
+    @media (min-width: 816px) { @content; }
+  }
+  @if $point == reverso-teen-shark {
+    @media (min-width: 900px) { @content; }
+  }
+  @if $point == reverso-mama-shark {
+    @media (min-width: 1000px) { @content; }
+  }
+}
+
+
+/*
+ * Mixin for micro clearfix
+ * @include microclearfix;
+*/
+@mixin microclearfix {
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+	*zoom: 1;
+}
+
+/*
+ * Mixin for placeholder styling
+ * @include placeHolder(#333);
+*/
+@mixin placeHolder($color) {
+	&::-webkit-input-placeholder { color:$color; }
+	&:-moz-placeholder { color:$color; }
+}
+
+/*
+ * Mixin for basic CSS triangles
+ * @include triangle(up, #000, 50px)
+*/
+@mixin triangle($direction:up, $color:#000, $size:100px) {
+	@if($direction == up) {
+		border-color: transparent transparent $color;
+		border-style: solid;
+		border-width: 0 $size $size;
+		height: 0;
+		width: 0;
+	}
+	@if($direction == down) {
+		border-color: $color transparent transparent transparent;
+		border-style: solid;
+		border-width: $size;
+		height:0;
+		width:0;
+	}
+	@if($direction == left) {
+		border-color: transparent $color transparent transparent;
+		border-style: solid;
+		border-width: $size $size $size 0;
+		height: 0;
+		width: 0;
+	}
+	@if($direction == right) {
+		border-color: transparent transparent transparent $color;
+		border-style: solid;
+		border-width: $size 0 $size $size;
+		height:0;
+		width:0;
+	}
+}
+
+/*
+ * Mixin for selection markup
+ * @include selection(hotpink, white);
+*/
+@mixin selection($background, $color, $element:false) {
+	@if($element) {
+		&::-moz-selection{ background:$background; color:$color; text-shadow:none; }
+		&::selection { background:$background; color:$color; text-shadow:none; }
+	} @else {
+		::-moz-selection{ background:$background; color:$color; text-shadow:none; }
+		::selection { background:$background; color:$color; text-shadow:none; }
+	}
+}
+
+/*
+ * Apply a CSS3 linear gradient
+ *
+ * $from - The original colour stop of the gradient, eg #FF0000 or #FF0000 20%
+ * $to - The final colour stop of the gradient
+ * $fallback - A fallback background-color; if none is provided, the $from colour is used
+ * $start - The starting point of the gradient
+ *
+ * @include linearGradient(red, green);
+ * @include linearGradient(red, green, transparent);
+ * @include linearGradient(red 50%, green 100%);
+ */
+@mixin linearGradient($from, $to, $solid: false, $start: top) {
+	@if ($solid) {
+		background-color: $solid;
+	} @else {
+		background-color: $from;
+	}
+	background-image: -webkit-linear-gradient($start, $from, $to);
+	background-image: -moz-linear-gradient($start, $from, $to);
+	background-image: -ms-linear-gradient($start, $from, $to);
+	background-image: -o-linear-gradient($start, $from, $to);
+	background-image: linear-gradient($start, $from, $to);
+}
+
+/*
+ * Apply a CSS3 box-rotate
+ * @include boxRotate(10deg);
+ */
+@mixin boxRotate($deg) {
+	-webkit-transform: rotate($deg);
+	-moz-transform: rotate($deg);
+	-ms-transform: rotate($deg);
+	-o-transform: rotate($deg);
+	transform: rotate($deg);
+	filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9914448613738104, M12=-0.13052619222005157,M21=0.13052619222005157, M22=0.9914448613738104, sizingMethod='auto expand');
+	zoom: 1;
+}
+
+/*
+ * @font-face mixin
+ * Bulletproof font-face via Font Squirrel
+ * @include fontface('family', '../fonts/', 'myfontname');
+ */
+
+@mixin fontface($font-family, $font-url, $font-name) {
+	@font-face {
+		font: {
+			family: $font-family;
+			style: normal;
+			weight: normal;
+		}
+		src: url($font-url + '/' + $font-name + '.eot') format('eot'), 
+			 url($font-url + '/' + $font-name + '.woff') format('woff'), 
+			 url($font-url + '/' + $font-name + '.ttf')  format('truetype'),
+			 url($font-url + '/' + $font-name + '.svg#' + $font-name) format('svg');
+	}
+}
+
+/* 
+ * Border Arrow Box
+ * @include border-box-arrow(left, 2, 40px, 1px, #f4f4f4, #cccccc);
+ */
+ 
+@mixin border-box-arrow($direction:left, $flatten:2, $arrowBaseLength:16px, $borderWidth:1px, $backgroundColor:red, $borderColor:white) {
+
+	// Directional constants
+	$directionOpposite: opposite-position($direction);
+	$directionPerpendicular: null;
+	@if $direction == top or $direction == bottom { $directionPerpendicular: left; }
+	@if $direction == left or $direction == right { $directionPerpendicular: top; }
+	$directionPerpendicularOpposite: opposite-position($directionPerpendicular);
+
+	// Le math
+	$baseBorder: $arrowBaseLength * (1 / $flatten);
+	$drop: $baseBorder * -1;
+	$adjust: ($arrowBaseLength + $borderWidth * 2) * -1;
+
+	// Force relatively positioned container
+	position: relative !important;
+
+	&:before, &:after {
+		content: '';
+		display: block;
+		width: 0;
+		height: 0;
+		position: absolute;
+		#{$directionPerpendicular}: 50%;
+		margin-#{$directionPerpendicular}: $adjust;
+		border: {
+			#{$directionPerpendicular}: $arrowBaseLength solid transparent;
+			#{$directionPerpendicularOpposite}: $arrowBaseLength solid transparent;
+		}
+		border-#{$directionOpposite}: {
+			width: $baseBorder;
+			style: solid;
+		}
+	}
+
+	&:before {
+		#{$direction}: $drop;
+		border-#{$directionOpposite}-color: $borderColor;
+	}
+
+	&:after {
+		#{$direction}: $drop + $borderWidth;
+		border-#{$directionOpposite}-color: $backgroundColor;
+	}
+}
+
+
+/*
+ * Animations
+ * Use it
+ 
+@include keyframes(move) {
+  0%   { left: 0; }
+  100% { left: 100px; }
+}
+
+.box {
+  @include animation(move 0.5s ease infinite alternate);
+} 
+ */
+ 
+ 
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content
+  }
+  @-moz-keyframes #{$name} {
+    @content
+  }
+  @-ms-keyframes #{$name} {
+    @content
+  }
+  @-o-keyframes #{$name} {
+    @content
+  }
+  @keyframes #{$name} {
+    @content
+  }
+}
+
+@mixin animation($value) {
+  -webkit-animation: $value;
+  -moz-animation: $value;
+  -ms-animation: $value;
+  -o-animation: $value;
+  animation: $value;
+}
+
+
+/* CSS3 Image Filter Tools
+---------------------------------------- */
+
+@mixin if-blur($amt: 4px) {
+  -o-filter: blur($amt);
+  -ms-filter: blur($amt);
+  -moz-filter: blur($amt);
+  -webkit-filter: blur($amt);
+}
+
+@mixin if-brightness($amt: 0.35) {
+  -o-filter: brightness($amt);
+  -ms-filter: brightness($amt);
+  -moz-filter: brightness($amt);
+  -webkit-filter: brightness($amt);
+}
+
+@mixin if-contrast($amt: 140%) {
+  -o-filter: contrast($amt);
+  -ms-filter: contrast($amt);
+  -moz-filter: contrast($amt);
+  -webkit-filter: contrast($amt);
+}
+
+@mixin if-grayscale($amt: 100%) {
+  -o-filter: grayscale($amt);
+  -ms-filter: grayscale($amt);
+  -moz-filter: grayscale($amt);
+  -webkit-filter: grayscale($amt);
+}
+
+@mixin if-huerotate($deg: 180deg) {
+  -o-filter: hue-rotate($deg);
+  -ms-filter: hue-rotate($deg);
+  -moz-filter: hue-rotate($deg);
+  -webkit-filter: hue-rotate($deg);
+}
+
+@mixin if-invert($amt: 100%) {
+  -o-filter: invert($amt);
+  -ms-filter: invert($amt);
+  -moz-filter: invert($amt);
+  -webkit-filter: invert($amt);
+}
+
+@mixin if-opacity($amt: 60%) {
+  -o-filter: opacity($amt);
+  -ms-filter: opacity($amt);
+  -moz-filter: opacity($amt);
+  -webkit-filter: opacity($amt);
+}
+
+@mixin if-saturate($amt: 4) {
+  -o-filter: saturate($amt);
+  -ms-filter: saturate($amt);
+  -moz-filter: saturate($amt);
+  -webkit-filter: saturate($amt);
+}
+
+@mixin if-sepia($amt: 100%) {
+  -o-filter: sepia($amt);
+  -ms-filter: sepia($amt);
+  -moz-filter: sepia($amt);
+  -webkit-filter: sepia($amt);
+}

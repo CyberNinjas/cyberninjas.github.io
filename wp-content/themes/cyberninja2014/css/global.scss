@@ -1,0 +1,103 @@
+/* Table of Contents
+	
+	- Special SCSS
+		- Compass
+		- Bits
+		- Mixins
+	
+*/
+	@import "bits";
+	@import "mixins";
+	
+/*
+	- HTML5 Reset
+		- Baseline Normalize
+		- Box Sizing
+		- Float Clearing
+*/
+	@import "reset";
+/*
+	- Defaults
+		- Typographical Elements
+		- Headings
+		- Objects
+		- Forms
+		- Tables
+*/
+	@import "defaults";
+
+/* 	- Icon Fonts
+		- Font Awesome
+		- Entypo
+	Select which one you'd like to use by uncommenting. 
+*/
+	 @import "fontawesome";
+	// @import "entypo";
+
+/*
+	- Structure and Layout
+		- Site Containers
+		- Column Widths and Positions
+		- Column Classes
+*/
+	@import "structure";
+/*
+	- Common Classes
+		- WordPress
+		- Genesis
+		- Titles
+*/
+	@import "common";
+/*
+	- Widgets
+		- Featured Content
+*/
+	@import "widgets";
+/*
+	- Plugins
+		- Genesis eNews Extended
+		- Genesis Latest Tweets
+		- Gravity Forms
+		- Jetpack
+*/
+	@import "plugins";
+/*
+	- Site Header
+		- Title Area
+		- Widget Area
+*/
+	@import "header";
+/*
+	- Site Navigation
+		- Header Navigation
+		- Primary Navigation
+		- Secondary Navigation
+*/
+	@import "navigation";
+/*
+	- Content Area
+		- Entries
+		- Pagination
+		- Comments
+*/
+	@import "content";
+/*
+	- Sidebars
+*/
+	@import "posts";
+	@import "sidebars";
+/*
+	- Footer Widgets
+	- Site Footer
+*/
+	@import "footer";
+/*
+	- Media Queries
+		- max-width: 1139px
+		- max-width: 1023px
+		- max-width: 767px
+	Off by default, enable by uncommenting
+*/
+	//@import "mediaqueries";
+	
+	

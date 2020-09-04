@@ -1,0 +1,128 @@
+/*
+Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.footer-widgets {
+	background-color: $dkgrey;
+	background-image: url(../images/footer-ninja.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	color: white;
+	clear: both;
+	padding: 40px 0 16px;
+	padding: 4rem 0 1.6rem;
+	h1, h2, h3, h4, h5, a, p {
+		color: white;
+		text-decoration: none;
+	}
+	a.icon {
+		background-color: #D5D5D5;
+		color: #535353;
+		text-shadow: 1px 1px 0px white;
+		text-shadow: 1px 1px 0px rgba(white, .4);
+		font-size: 22px;
+		line-height: 40px;
+		text-align: center;
+		height: 40px;
+		width: 40px;
+		border-radius: 50%;
+		display: block;
+		float: left;
+		margin: 0 5px 5px 0;
+		box-shadow: 0 0 4px rgba(black, .3);
+		border-top: 1px solid rgba(white, .4);
+		border-left: 1px solid rgba(white, .4);
+		border-right: 1px solid rgba(black, .4);
+		border-bottom: 1px solid rgba(black, .4);
+		&:hover {
+			color: #222222;
+			background-color: #9d9d9d;
+		}
+		&:active {
+			border-right: 1px solid rgba(white, .4);
+			border-bottom: 1px solid rgba(white, .4);
+			border-top: 1px solid rgba(black, .4);
+			border-left: 1px solid rgba(black, .4);
+			box-shadow: 2px 2px 2px rgba(black, .3) inset;
+		}
+	}
+}
+
+.footer-widgets-1,
+.footer-widgets-2,
+.footer-widgets-3,
+.footer-widgets-4 {
+	width: 20%;
+	float: left;
+	margin: 0;
+	padding-right: 50px;
+	@include break(mama-shark) {
+		width: 33%;
+	}
+	@include break(child-shark) {
+		width: 50%;
+	}
+	@include break(toddler-shark) {
+		width: 100%;
+	}
+}
+
+.footer-widgets-1 {
+	width: 40%;
+	@include break(mama-shark) {
+		width: 100%;
+	}
+	h3 {
+		position: relative;
+		padding-left: 82px;
+		font-size: 36px;
+	}
+	img {
+		position: absolute;
+		width: 72px;
+		left: 0;
+		top: -8px;
+		@include break(toddler-shark) {
+			top: 10px;
+		}
+	}
+	
+}
+
+.footer-widgets a:hover {
+	color: #ddd;
+}
+
+.footer-widgets .widget {
+	margin-bottom: 24px;
+	margin-bottom: 2.4rem;
+}
+
+.footer-widgets .widget-title {
+	color: #fff;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: none;
+	margin-top: 16px;
+}
+
+.footer-widgets li {
+	list-style-type: none;
+	margin-bottom: 6px;
+	margin-bottom: 0.6rem;
+	word-wrap: break-word;
+}
+
+.footer-widgets .search-form input:focus {
+	border: 1px solid #ddd;
+}
+
+
+/*
+Site Footer
+---------------------------------------------------------------------------------------------------- */
+
+.site-footer {
+	display: none;
+	background-color: $ltgrey;
+}

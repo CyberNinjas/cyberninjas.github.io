@@ -1,0 +1,93 @@
+/* Primary / Secondary Sidebars
+------------------------------------------------------------ */
+
+.sidebar {
+	display: inline;
+	float: right;
+	font-size: 14px;
+	width: 30%;
+	@include break(toddler-shark) {
+		width: 38%;
+	}
+	@include break(baby-shark) {
+		width: 100%;
+	}
+	.centered-page & {
+		display: none;
+	}
+	
+	h4.widgettitle {
+		padding: 10px;
+	}
+}
+
+#sidebar-alt {
+	float: left;
+	width: 150px;
+}
+
+
+.sidebar-content #sidebar,
+.sidebar-sidebar-content #sidebar {
+	float: left;
+}
+
+.content-sidebar-sidebar #sidebar-alt {
+	float: right;
+}
+
+.sidebar p {
+	font-size: inherit;
+}
+
+.sidebar .widget {
+	background-color: $ltgrey;
+	margin: 0 0 5px;
+	padding: 0 0 15px;
+}
+
+.sidebar.widget-area ol,
+.sidebar.widget-area ul,
+.widget_tag_cloud div div,
+.sidebar.widget-area .textwidget {
+	padding: 15px;
+}
+
+.sidebar.widget-area ul li,
+#footer-widgets .widget-area ul li {
+	list-style-type: none;
+	margin: 0 0 7px;
+	padding: 0 0 5px;
+	word-wrap: break-word;
+}
+
+.sidebar.widget-area ul ul li {
+	border: none;
+	margin: 0;
+}
+
+
+.sidebar .featuredpost {
+	.post, .videos {
+		padding: 0 15px 20px;
+		img {
+			border: none;
+			padding: 0;
+			background: 0;
+			width: 100%;
+		}		
+	}
+
+}
+
+
+.single-tribe_venue .featured-content .type-post header.entry-header,
+.single-tribe_organizer .featured-content .type-post header.entry-header,
+.single-tribe_events .featured-content .type-post header.entry-header,
+.events-archive .featured-content .type-post header.entry-header {
+    display:block;
+}
+
+.tribe-filters-open, .tribe-filters-open body {
+overflow: visible!important;
+}
