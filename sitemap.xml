@@ -1,29 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//cyberninjas.com/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//cyberninjas.github.io/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<sitemap>
-		<loc>https://cyberninjas.com/post-sitemap.xml</loc>
+		<loc>https://cyberninjas.github.io/post-sitemap.xml</loc>
 		<lastmod>2019-07-31T16:47:30+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>https://cyberninjas.com/page-sitemap.xml</loc>
+		<loc>https://cyberninjas.github.io/page-sitemap.xml</loc>
 		<lastmod>2020-06-03T18:00:29+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>https://cyberninjas.com/careers-sitemap.xml</loc>
+		<loc>https://cyberninjas.github.io/careers-sitemap.xml</loc>
 	</sitemap>
 	<sitemap>
-		<loc>https://cyberninjas.com/testimonials-sitemap.xml</loc>
+		<loc>https://cyberninjas.github.io/testimonials-sitemap.xml</loc>
 	</sitemap>
 	<sitemap>
-		<loc>https://cyberninjas.com/category-sitemap.xml</loc>
+		<loc>https://cyberninjas.github.io/category-sitemap.xml</loc>
 		<lastmod>2019-07-31T16:47:30+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>https://cyberninjas.com/post_tag-sitemap.xml</loc>
+		<loc>https://cyberninjas.github.io/post_tag-sitemap.xml</loc>
 		<lastmod>2017-12-30T17:13:32+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>https://cyberninjas.com/author-sitemap.xml</loc>
+		<loc>https://cyberninjas.github.io/author-sitemap.xml</loc>
 		<lastmod>2018-09-19T23:19:16+00:00</lastmod>
 	</sitemap>
 </sitemapindex>
